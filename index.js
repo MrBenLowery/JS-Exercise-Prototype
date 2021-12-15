@@ -40,7 +40,7 @@ Airplane.prototype.land = function () {
 */
 
 function Person() {
-  
+
 }
 
 
@@ -64,7 +64,7 @@ function Person() {
 */
 
 function Car() {
-  
+
 }
 
 
@@ -76,31 +76,39 @@ function Car() {
         + Should return a string "Playing with x", x being the favorite toy.
 */
 function Baby() {
- 
+
 }
 
 
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  
+  1. Global/Object window binding
+  When a function is in the global scope, 'this' is then a window object.
+  
+  2. Implicit Binding
+  When dot notation is used, whatever is before the dot, is the 'this'.
+
+  3. New Binding
+  When a constructor function is used, 'this' refers to a specific instance of the object that is created and returned by the constructor function. 
+
+  4. Explicit binding
+  When .call or .apply is used. 
 */
 
 
 ///////// END OF CHALLENGE /////////
 
 /* 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 */
-function foo(){
+function foo() {
   console.log('its working!');
   return 'bar';
 }
 foo();
 module.exports = {
   foo,
-  Person, 
+  Person,
   Car,
   Baby
 }
